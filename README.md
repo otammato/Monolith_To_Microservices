@@ -225,8 +225,12 @@ Our three services are:
 - threads
 - posts
 
-![alt text](https://github.com/otammato/monolyth_to_microservices/blob/main/monolith_5-Microservices-app-architecture.a0103d1b39c5702fb94cfa20ec7fa29f1bb75e1f.png?raw=true)
 <br><br>
+<p align="center">
+  <img src="https://github.com/otammato/monolith_to_microservices/blob/main/images/monolith_5-Microservices-app-architecture.a0103d1b39c5702fb94cfa20ec7fa29f1bb75e1f.png" />
+</p>
+<br><br>
+
 a. Client
 The client makes traffic requests over port 80.
 
