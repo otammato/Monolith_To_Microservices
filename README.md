@@ -67,7 +67,7 @@ $ export PATH=$HOME/.local/bin:$PATH
 
 #### 1.2. Containerizing the monolitic app to Amazon ECS.
 ##### 1.2.1. Launch an AWS ECR (elastic container registry).
-<img src="ECR_create.png" alt="drawing" width="700"/>
+<img src="images/ECR_create.png" alt="drawing" width="700"/>
 <br>
 
 ##### 1.2.2. Keep the uri of ECR for later.
