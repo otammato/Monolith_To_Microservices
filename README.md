@@ -142,7 +142,9 @@ $ docker push [000000000000].dkr.ecr.us-east-1.amazonaws.com/api-repo:latest
 
 # 2.
 In this section, we will use Amazon Elastic Container Service (Amazon ECS) to instantiate a managed cluster of EC2 compute instances and deploy your image as a container running on the cluster.
-![alt text](https://github.com/otammato/monolyth_to_microservices/blob/main/containerized_monolyth.png?raw=true)
+<p align="center">
+  <img src="https://github.com/otammato/monolith_to_microservices/blob/main/images/containerized_monolyth.png" />
+</p>
 <br><br>
 
 ##### 2.1. Creating an AWS ECS cluster.
