@@ -21,7 +21,9 @@ Technologies used for the project:
 
 # 1.
 In this section, we will build the Docker container image for our monolithic node.js application and push it to Amazon Elastic Container Registry (Amazon ECR)
-![alt text](https://github.com/otammato/monolith_to_microservices/images/blob/main/monolith_3-Image-Deployment-to-Amazon-ECR.ef4f8b89baccbd37380998a8d896126df5ed8a3b.png?raw=true)
+<p align="center">
+  <img src="https://github.com/otammato/monolith_to_microservices/blob/main/images/monolith_3-Image-Deployment-to-Amazon-ECR.ef4f8b89baccbd37380998a8d896126df5ed8a3b.png" />
+</p>
 <br><br>
 
 #### 1.1. Pre-requisites.
