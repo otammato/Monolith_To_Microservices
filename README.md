@@ -2,7 +2,7 @@
 In this project we will deploy a monolithic node.js application to a Docker container, then decouple the application into microservices without any downtime. The node.js application hosts a simple message board with threads and messages between users.
 
 <p align="center">
-  <img src="https://github.com/otammato/monolith_to_microservices/images/monolith_1-monolith-microservices.70b547e30e30b013051d58a93a6e35e77408a2a8.png" />
+  <img src="https://github.com/otammato/monolith_to_microservices/blob/main/images/monolith_1-monolith-microservices.70b547e30e30b013051d58a93a6e35e77408a2a8.png" />
 </p>
 
 #### Monolithic Architecture
