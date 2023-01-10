@@ -71,11 +71,11 @@ $ export PATH=$HOME/.local/bin:$PATH
 <br>
 
 ##### 1.2.2. Keep the uri of ECR for later.
-<img src="ECR_created2.png" alt="drawing" width="700"/>
+<img src="images/ECR_created2.png" alt="drawing" width="700"/>
 <br>
 
 ##### 1.2.3. Check the push commands to push a Docker image to ECR registry.
-<img src="ECR_push_c2.png" alt="drawing" width="700"/>
+<img src="images/ECR_push_c2.png" alt="drawing" width="700"/>
 <br>
 
 ##### 1.2.4. Check the current directory and content of the docker file.
@@ -104,7 +104,7 @@ CMD ["node", "server.js"]
 
 
 ##### 1.2.4. Use this commands for later steps.
-<img src="push.png" alt="drawing" width="700"/>
+<img src="images/push.png" alt="drawing" width="700"/>
 <br>
 
 ##### 1.2.5. This command is typically used to authenticate Docker to an Amazon ECR registry so that you can use the docker push and docker pull commands to transfer images to and from the registry. Don't forget to replace [000000000000] with your AWS account ID. Before that, change your directory to 2-containerized-monolith/ 
@@ -133,7 +133,7 @@ $ docker push [000000000000].dkr.ecr.us-east-1.amazonaws.com/api-repo:latest
 <br>
 
 ##### 1.2.4. Now you can see the pushed docker image in your repository. Save the image URI for later to create a task to run it in a cluster. This is equivalent to go to Docker Hub and pull an image.
-<img src="pushed_di2.png" alt="drawing" width="700"/>
+<img src="images/pushed_di2.png" alt="drawing" width="700"/>
 <br>
 <br>
 <br>
@@ -146,71 +146,71 @@ In this section, we will use Amazon Elastic Container Service (Amazon ECS) to in
 <br><br>
 
 ##### 2.1. Creating an AWS ECS cluster.
-<img src="ECS_cluster.png" alt="drawing" width="700"/>
-<img src="ECS_cluster1.png" alt="drawing" width="700"/>
-<img src="ECS_cluster2.png" alt="drawing" width="700"/>
-<img src="ECS_cluster3.png" alt="drawing" width="700"/>
-<img src="ECS_cluster4.png" alt="drawing" width="700"/>
+<img src="images/ECS_cluster.png" alt="drawing" width="700"/>
+<img src="images/ECS_cluster1.png" alt="drawing" width="700"/>
+<img src="images/ECS_cluster2.png" alt="drawing" width="700"/>
+<img src="images/ECS_cluster3.png" alt="drawing" width="700"/>
+<img src="images/ECS_cluster4.png" alt="drawing" width="700"/>
 <br>
 
 ##### 2.2. Configure a task definition.
-<img src="task_def1.png" alt="drawing" width="700"/>
-<img src="task_def2.png" alt="drawing" width="700"/>
-<img src="task_def3.png" alt="drawing" width="700"/>
-<img src="task_def4.png" alt="drawing" width="700"/>
-<img src="task_def5.png" alt="drawing" width="700"/>
+<img src="images/task_def1.png" alt="drawing" width="700"/>
+<img src="images/task_def2.png" alt="drawing" width="700"/>
+<img src="images/task_def3.png" alt="drawing" width="700"/>
+<img src="images/task_def4.png" alt="drawing" width="700"/>
+<img src="images/task_def5.png" alt="drawing" width="700"/>
 <br>
 
 ##### 2.3. Creating a Load balancer and a target group for LB.
-<img src="elb_2.png" alt="drawing" width="700"/>
-<img src="elb_3.png" alt="drawing" width="700"/>
-<img src="elb_4.png" alt="drawing" width="700"/>
-<img src="elb_5.png" alt="drawing" width="700"/>
-<img src="elb_6.png" alt="drawing" width="700"/>
-<img src="elb_7.png" alt="drawing" width="700"/>
-<img src="elb_8.png" alt="drawing" width="700"/>
-<img src="elb_9.png" alt="drawing" width="700"/>
-<img src="elb_10.png" alt="drawing" width="700"/>
-<img src="elb_11.png" alt="drawing" width="700"/>
-<img src="elb_12.png" alt="drawing" width="700"/>
+<img src="images/elb_2.png" alt="drawing" width="700"/>
+<img src="images/elb_3.png" alt="drawing" width="700"/>
+<img src="images/elb_4.png" alt="drawing" width="700"/>
+<img src="images/elb_5.png" alt="drawing" width="700"/>
+<img src="images/elb_6.png" alt="drawing" width="700"/>
+<img src="images/elb_7.png" alt="drawing" width="700"/>
+<img src="images/elb_8.png" alt="drawing" width="700"/>
+<img src="images/elb_9.png" alt="drawing" width="700"/>
+<img src="images/elb_10.png" alt="drawing" width="700"/>
+<img src="images/elb_11.png" alt="drawing" width="700"/>
+<img src="images/elb_12.png" alt="drawing" width="700"/>
 <br><br>
 return to the previous tab where we were setting up a load balanser, refresh the target groups and choose our newly created target group
 <br><br>
-<img src="elb_13.png" alt="drawing" width="700"/>
-<img src="elb_14.png" alt="drawing" width="700"/>
-<img src="elb_15.png" alt="drawing" width="700"/>
+<img src="images/elb_13.png" alt="drawing" width="700"/>
+<img src="images/elb_14.png" alt="drawing" width="700"/>
+<img src="images/elb_15.png" alt="drawing" width="700"/>
 <br>
 
 ##### 2.4. Configure/update the security group.
-<img src="sg_1.png" alt="drawing" width="700"/>
-<img src="sg_2.png" alt="drawing" width="700"/>
-<img src="sg_3.png" alt="drawing" width="700"/>
-<img src="sg_4.png" alt="drawing" width="700"/>
-<img src="sg_5.png" alt="drawing" width="700"/>
+<img src="images/sg_1.png" alt="drawing" width="700"/>
+<img src="images/sg_2.png" alt="drawing" width="700"/>
+<img src="images/sg_3.png" alt="drawing" width="700"/>
+<img src="images/sg_4.png" alt="drawing" width="700"/>
+<img src="images/sg_5.png" alt="drawing" width="700"/>
 <br>
 
 ##### 2.5. Deploy the monolith as a service into the cluster.
-<img src="mon_as_a_service1.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service2.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service3.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service4.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service5.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service6.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service7.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service8.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service9.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service10.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service11.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service12.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service13.png" alt="drawing" width="700"/>
-<img src="mon_as_a_service14.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service1.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service2.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service3.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service4.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service5.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service6.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service7.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service8.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service9.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service10.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service11.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service12.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service13.png" alt="drawing" width="700"/>
+<img src="images/mon_as_a_service14.png" alt="drawing" width="700"/>
 <br>
 
 ##### 2.5. Test the monolith.
-<img src="mon_deployed1.png" alt="drawing" width="700"/>
-<img src="mon_deployed2.png" alt="drawing" width="700"/>
-<img src="mon_deployed3.png" alt="drawing" width="700"/>
-<img src="mon_deployed4.png" alt="drawing" width="700"/>
+<img src="images/mon_deployed1.png" alt="drawing" width="700"/>
+<img src="images/mon_deployed2.png" alt="drawing" width="700"/>
+<img src="images/mon_deployed3.png" alt="drawing" width="700"/>
+<img src="images/mon_deployed4.png" alt="drawing" width="700"/>
 <br>
 
 # 3.
@@ -243,9 +243,9 @@ Now our app is split into 3 folders: users, threads, posts, each contains its ow
 ### 3.1. Creating repositories to push there each docker container.
 #### 3.1.1. Create a repository for "users" Docker image.
 #### 3.1.1.1. Create a repository for "users" Docker image.
-<img src="ecr_depo_users1.png" alt="drawing" width="700"/>
-<img src="ecr_depo_users2.png" alt="drawing" width="700"/>
-<img src="ecr_depo_users3.png" alt="drawing" width="700"/>
+<img src="images/ecr_depo_users1.png" alt="drawing" width="700"/>
+<img src="images/ecr_depo_users2.png" alt="drawing" width="700"/>
+<img src="images/ecr_depo_users3.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.1.1.2. Create and push the Docker image from "users" folder to "api-users" repository. Replace [000000000000] with your AWS account ID.
@@ -267,16 +267,16 @@ $ docker push [000000000000].dkr.ecr.us-east-1.amazonaws.com/api-users-repo:late
 <br>
 
 The result with all repositories and Docker images inside of each:
-<img src="ecr_repo_microserv.png" alt="drawing" width="700"/>
+<img src="images/ecr_repo_microserv.png" alt="drawing" width="700"/>
 <br><br><br>
 
 #### 3.2. Create task definitions.
 #### 3.2.1. Create task definition for users
-<img src="task_def1.png" alt="drawing" width="700"/>
-<img src="task_def2.png" alt="drawing" width="700"/>
-<img src="task_def3.png" alt="drawing" width="700"/>
-<img src="task_def4.png" alt="drawing" width="700"/>
-<img src="task_def5.png" alt="drawing" width="700"/>
+<img src="images/task_def1.png" alt="drawing" width="700"/>
+<img src="images/task_def2.png" alt="drawing" width="700"/>
+<img src="images/task_def3.png" alt="drawing" width="700"/>
+<img src="images/task_def4.png" alt="drawing" width="700"/>
+<img src="images/task_def5.png" alt="drawing" width="700"/>
 <br>
 
 #### 3.2.2. Create task definition for threads
@@ -288,15 +288,15 @@ Follow the similar steps as for 3.2.1.
 <br><br>
 
 The result with all task definitions created:<br>
-<img src="task_def6.png" alt="drawing" width="700"/>
+<img src="images/task_def6.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.3. Create target groups.
 #### 3.3.1. Create a target group for users
-<img src="target group1.png" alt="drawing" width="700"/>
-<img src="target group2.png" alt="drawing" width="700"/>
-<img src="target group3.png" alt="drawing" width="700"/>
-<img src="target group4.png" alt="drawing" width="700"/>
+<img src="images/target group1.png" alt="drawing" width="700"/>
+<img src="images/target group2.png" alt="drawing" width="700"/>
+<img src="images/target group3.png" alt="drawing" width="700"/>
+<img src="images/target group4.png" alt="drawing" width="700"/>
 <br>
 
 #### 3.3.2. Create a target group for threads
@@ -308,29 +308,29 @@ Follow the similar steps as for 3.3.1.
 <br><br>
 
 The result with all target groups created:<br>
-<img src="target group5.png" alt="drawing" width="700"/>
+<img src="images/target group5.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.4. Update rules for a load balancer to redirect HTTP requests appropriately.
-<img src="lb_rule1.png" alt="drawing" width="700"/>
-<img src="lb_rule2.png" alt="drawing" width="700"/>
-<img src="lb_rule3.png" alt="drawing" width="700"/>
-<img src="lb_rule4.png" alt="drawing" width="700"/>
-<img src="lb_rule5.png" alt="drawing" width="700"/>
-<img src="lb_rule6.png" alt="drawing" width="700"/>
-<img src="lb_rule7.png" alt="drawing" width="700"/>
-<img src="lb_rule8.png" alt="drawing" width="700"/>
+<img src="images/lb_rule1.png" alt="drawing" width="700"/>
+<img src="images/lb_rule2.png" alt="drawing" width="700"/>
+<img src="images/lb_rule3.png" alt="drawing" width="700"/>
+<img src="images/lb_rule4.png" alt="drawing" width="700"/>
+<img src="images/lb_rule5.png" alt="drawing" width="700"/>
+<img src="images/lb_rule6.png" alt="drawing" width="700"/>
+<img src="images/lb_rule7.png" alt="drawing" width="700"/>
+<img src="images/lb_rule8.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.5. Create services.
 #### 3.5.1. Create a service for users
-<img src="service_ms1.png" alt="drawing" width="700"/>
-<img src="service_ms2.png" alt="drawing" width="700"/>
-<img src="service_ms3.png" alt="drawing" width="700"/>
-<img src="service_ms4.png" alt="drawing" width="700"/>
-<img src="service_ms5.png" alt="drawing" width="700"/>
-<img src="service_ms6.png" alt="drawing" width="700"/>
-<img src="service_ms7.png" alt="drawing" width="700"/>
+<img src="images/service_ms1.png" alt="drawing" width="700"/>
+<img src="images/images/service_ms2.png" alt="drawing" width="700"/>
+<img src="images/service_ms3.png" alt="drawing" width="700"/>
+<img src="images/service_ms4.png" alt="drawing" width="700"/>
+<img src="images/service_ms5.png" alt="drawing" width="700"/>
+<img src="images/service_ms6.png" alt="drawing" width="700"/>
+<img src="images/service_ms7.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.5.2. Create a service for threads
@@ -342,26 +342,26 @@ Follow the similar steps as for 3.5.1.
 <br><br>
 
 The result with all services created:<br>
-<img src="service_ms8.png" alt="drawing" width="700"/>
+<img src="images/service_ms8.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.5. Disengage the monolith service.
-<img src="disengage_m1.png" alt="drawing" width="700"/>
-<img src="disengage_m2.png" alt="drawing" width="700"/>
-<img src="disengage_m3.png" alt="drawing" width="700"/>
-<img src="disengage_m4.png" alt="drawing" width="700"/>
+<img src="images/disengage_m1.png" alt="drawing" width="700"/>
+<img src="images/disengage_m2.png" alt="drawing" width="700"/>
+<img src="images/disengage_m3.png" alt="drawing" width="700"/>
+<img src="images/disengage_m4.png" alt="drawing" width="700"/>
 <br><br>
 
 
 #### 3.6. Test our microservices.
 #### 3.6.1. Copy and paste the DNS name of our load balancer in a new browser tab:
-<img src="elb_dns.png" alt="drawing" width="700"/>
+<img src="images/elb_dns.png" alt="drawing" width="700"/>
 <br><br>
 
 #### 3.6.2. Then test different services endpoints if they work as expected:
-<img src="ms_test11.png" alt="drawing" width="700"/>
-<img src="ms_test22.png" alt="drawing" width="700"/>
-<img src="ms_test33.png" alt="drawing" width="700"/>
-<img src="ms_test44.png" alt="drawing" width="700"/>
-<img src="ms_test55.png" alt="drawing" width="700"/>
+<img src="images/ms_test11.png" alt="drawing" width="700"/>
+<img src="images/ms_test22.png" alt="drawing" width="700"/>
+<img src="images/ms_test33.png" alt="drawing" width="700"/>
+<img src="images/ms_test44.png" alt="drawing" width="700"/>
+<img src="images/ms_test55.png" alt="drawing" width="700"/>
 <br><br>
