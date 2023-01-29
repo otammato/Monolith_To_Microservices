@@ -1,4 +1,4 @@
-# monolyth_to_microservices (The page is under development)
+# monolith_to_microservices (The page is under development)
 In this project we will deploy a monolithic node.js application to a Docker container, then decouple the application into microservices without any downtime. The node.js application hosts a simple message board with threads and messages between users.
 
 <p align="center">
